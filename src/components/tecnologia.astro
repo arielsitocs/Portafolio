@@ -1,0 +1,63 @@
+---
+interface Props {
+    imagen: any;
+    titulo: string;
+    nivel:string;
+}
+
+const {imagen, titulo, nivel} = Astro.props;
+---
+
+<div class="tecnologia">
+    <img src={imagen}>
+
+    <div class="tecnologia-info">
+        <h1>{titulo}</h1>
+        <h3>Exp: {nivel}</h3>
+    </div>
+</div>
+
+<style>
+    .tecnologia {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 3px;
+        height: 91px;
+        color: white;
+        background-color: rgba(61, 61, 61, 0.301);
+
+        img {
+            max-width: 57px;
+            max-height: 57px;
+            border-radius: 7px;
+        }
+
+        .tecnologia-info {
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                margin-bottom: 5px;
+                font-size: 15px;
+            }
+
+            h3 {
+                font-size: 13px;
+                color: rgb(148, 163, 181, 1);
+            }
+        }
+    }
+
+    .tecnologia:hover {
+        background-color: rgba(80, 80, 80, 0.301);
+    }
+
+    @media (max-width: 460px) {
+        .tecnologia {
+            margin-bottom: 10px;
+        }
+    }
+</style>

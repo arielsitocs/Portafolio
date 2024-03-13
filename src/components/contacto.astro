@@ -1,0 +1,30 @@
+---
+interface Props {
+    imagen: any;
+    link?: string;
+    id?: string;
+}
+
+const {imagen, link, id} = Astro.props;
+---
+
+<div class="contacto" id={id}>
+    <a href={link}><img src={imagen}></a>
+</div>
+
+<style>
+    a {
+        margin-right: 15px;
+
+        img {
+            width: 22px;
+            border-radius: 0;
+            background: none;
+        }
+    }
+
+    a:hover {
+        opacity: 0.7;
+        cursor: pointer;
+    }
+</style>

@@ -1,0 +1,207 @@
+---
+import "../styles/index.css";
+import logoAriel from "../img/logoAriel.png";
+import fotoAriel from "../img/ariel.jpg";
+import GitHub from "../img/github.png";
+import LinkedIn from "../img/linkedin.png";
+import Gmail from "../img/gmail.png";
+import Default from "../img/default.jpg";
+import Menu from "../img/menu.png";
+import js from "../img/js.png";
+import python from "../img/python.png";
+import cplus from "../img/c++.png";
+import java from "../img/java.png";
+import astro from "../img/astro.png";
+import react from "../img/react.png";
+import angular from "../img/angular.png";
+import Contacto from "../components/contacto.astro";
+import Tecnologia from "../components/tecnologia.astro";
+import Proyecto from "../components/proyecto.astro";
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+		/>
+		<title>Ariel Escobar</title>
+	</head>
+
+	<body>
+		<div class="content">
+			<header>
+				<nav>
+					<a href="#inicio">Inicio</a>
+					<a href="#habilidades">Habilidades</a>
+					<a href="#proyectos">Proyectos</a>
+					<a href="#contacto">Contacto</a>
+				</nav>
+			</header>
+
+			<section id="inicio">
+				<div class="inicio-content">
+					<div class="inicio-me">
+						<div class="me-image">
+							<img src={logoAriel.src} alt="" />
+						</div>
+
+						<div class="me-info">
+							<h1>Ariel Escobar</h1>
+							<h3>FullStack Developer</h3>
+							<div class="contactos">
+								<Contacto
+									link="https://github.com/arielsitocs"
+									imagen={GitHub.src}
+								/>
+
+								<Contacto
+									link="https://www.linkedin.com/in/ariel-escobar/"
+									imagen={LinkedIn.src}
+								/>
+
+								<Contacto imagen={Gmail.src} id="gmail"/>
+							</div>
+						</div>
+					</div>
+
+					<div class="inicio-about">
+						<h1 id="titulo">SOBRE MÍ</h1>
+						<p>
+							Soy un programador dedicado principalmente al
+							desarrollo Web, con estudios profesionales y
+							autodidactas por igual. Terminando mi carrera de
+							ingeniería informática, me dedicaré a buscar más
+							experiencias y seguir avanzando en este maravilloso
+							mundo del desarrollo.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="habilidades">
+				<div class="habilidades-content">
+					<h1 id="titulo">MIS HABILIDADES</h1>
+					<div class="habilidades">
+						<Tecnologia
+							imagen={js.src}
+							titulo="JAVASCRIPT"
+							nivel="Medio"
+						/>
+
+						<Tecnologia
+							imagen={python.src}
+							titulo="PYTHON"
+							nivel="Medio"
+						/>
+
+						<Tecnologia
+							imagen={cplus.src}
+							titulo="C++"
+							nivel="Medio"
+						/>
+
+						<Tecnologia
+							imagen={java.src}
+							titulo="JAVA"
+							nivel="Medio"
+						/>
+
+						<Tecnologia
+							imagen={astro.src}
+							titulo="ASTRO"
+							nivel="Medio"
+						/>
+
+						<Tecnologia
+							imagen={react.src}
+							titulo="REACT"
+							nivel="Medio"
+						/>
+
+						<Tecnologia
+							imagen={angular.src}
+							titulo="ANGULAR"
+							nivel="Medio"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section id="proyectos">
+				<div class="proyectos-content">
+					<h1 id="titulo">MIS PROYECTOS</h1>
+					<div class="proyectos">
+						<Proyecto
+							titulo="PORTAFOLIO"
+							descripcion="Un proyecto de tipo personal, para darme a conocer y explicar a lo que me dedico."
+							tecnologias={["ASTRO", "HTML", "CSS", "JS"]}
+							link=""
+							github=""
+						/>
+
+						<Proyecto
+							titulo="TIENDA ZAPATOS"
+							descripcion="Un proyecto de tipo personal, para darme a conocer y explicar a lo que me dedico."
+							tecnologias={["HTML", "CSS", "JS"]}
+							link=""
+							github=""
+						/>
+
+						<Proyecto
+							titulo="GESTOR BASE DE DATOS"
+							descripcion="Un proyecto de tipo personal, para darme a conocer y explicar a lo que me dedico."
+							tecnologias={["REACT", "HTML", "TAILWIND", "JS"]}
+							link=""
+							github=""
+						/>
+					</div>
+				</div>
+			</section>
+
+			<section id="contacto">
+				<h1 id="titulo">CONTACTAME AQUÍ</h1>
+				<div class="contacto-content">
+					<form action="https://formsubmit.co/24b60ba7ba2ccc74c838de11763f196d" method="POST" id="form">
+						<div class="nombre">
+							<h1>Nombre</h1>
+							<input type="text" name="name" required/>
+						</div>
+
+						<div class="correo">
+							<h1>Correo</h1>
+							<input type="email" name="email" required/>
+						</div>
+
+						<div class="mensaje">
+							<h1>Dime tu mensaje</h1>
+							<textarea name="subject" required></textarea>
+						</div>
+
+						<div class="boton">
+							<button type="submit">ENVIAR</button>
+						</div>
+						
+						<input type="hidden" name="_next" value="https://arieltesting.netlify.app/#inicio">
+						<input type="hidden" name="_captcha" value="false">
+					</form>
+				</div>
+			</section>
+
+			<footer>
+				<h1>©2024 Ariel Escobar. Todos los derechos reservados.</h1>
+			</footer>
+		</div>
+
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+		</style>
+	</body>
+
+	<script src="../js/index.js"></script>
+</html>

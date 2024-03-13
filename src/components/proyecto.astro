@@ -1,0 +1,94 @@
+---
+interface Props {
+    titulo: string;
+    descripcion: string;
+    tecnologias: string[];
+    link: string;
+    github: string;
+}
+
+const { titulo, descripcion, tecnologias, link, github } = Astro.props;
+
+import gh from "../img/github.png";
+import lnk from "../img/link.png";
+---
+
+<div class="proyecto">
+    <div class="top">
+        <h1>{titulo}</h1>
+        <div class="links">
+            <a href={link}><img src={gh.src} /></a>
+            <a href={github}><img src={lnk.src} /></a>
+        </div>
+    </div>
+    <p>{descripcion}</p>
+    <div class="proyecto-tecnologias">
+        {tecnologias.map((tecnologia: string) => <h3>{tecnologia}</h3>)}
+    </div>
+</div>
+
+<style>
+    :root {
+        --gray-black: rgb(36, 36, 36);
+        --diamond: rgba(3, 216, 223, 0.904);
+        --secondary-text: rgb(148, 163, 181, 1);
+    }
+
+    .proyecto {
+        font-family: "Ubuntu", sans-serif;
+        background-color: rgba(61, 61, 61, 0.301);
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+
+        .top {
+            display: flex;
+            align-items: center;
+            margin-bottom: 3px;
+
+            h1 {
+                color: white;
+                font-size: 18px;
+            }
+
+            .links {
+                display: flex;
+                margin-left: 5px;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin-left: 4%;
+                    background-color: rgba(0, 0, 0, 0.199);
+                }
+
+                a:hover {
+                    background-color:  rgba(0, 0, 0, 0.404);
+                }
+            }
+
+            img {
+                max-width: 20px;
+            }
+        }
+
+        p {
+            color: var(--secondary-text);
+        }
+
+        .proyecto-tecnologias {
+            margin-top: 6px;
+            display: flex;
+            flex-wrap: wrap;
+
+            h3 {
+                color: var(--diamond);
+                margin-right: 5px;
+                font-size: 16px;
+            }
+        }
+    }
+</style>
