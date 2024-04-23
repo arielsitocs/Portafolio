@@ -163,69 +163,6 @@ header {
     }
 }
 
-/* Contacto*/
-
-form {
-    font-family: 'Ubuntu', sans-serif;
-    margin-top: 20px;
-
-    .nombre, .correo, .mensaje {
-        margin-bottom: 10px;
-    }
-
-    h1 {
-        color: white;
-        margin-bottom: 5px;
-        font-size: 17px;
-    }
-
-    input,
-    textarea {
-        background-color: var(--gray-black);
-        border: none;
-        font-size: 14px;
-        padding: 7px;
-        color: white;
-        width: 100%;
-        height: 40px;
-        resize: none;
-    }
-    
-    input:active {
-        border: 2px solid var(--diamond);
-    }
-
-    .mensaje {
-        textarea {
-            height: 150px;
-        }
-    }
-
-    .boton {
-        display: flex;
-        justify-content: center;
-    }
-
-    button {
-        width: 120px;
-        height: 35px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-weight: 600;
-        background-color: var(--diamond);
-        color: white;
-        border: none;
-        border-radius: 7px;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    button:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 10px var(--diamond);
-        cursor: pointer;
-    }
-}
-
 /* Footer */
 
 footer {

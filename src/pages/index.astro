@@ -17,6 +17,7 @@ import angular from "../img/angular.png";
 import Contacto from "../components/contacto.astro";
 import Tecnologia from "../components/tecnologia.astro";
 import Proyecto from "../components/proyecto.astro";
+import Formulario from "../components/formulario.astro";
 ---
 
 <html lang="es">
@@ -167,29 +168,7 @@ import Proyecto from "../components/proyecto.astro";
 			<section id="contacto">
 				<h1 id="titulo">CONTACTAME AQUÍ</h1>
 				<div class="contacto-content">
-					<form action="https://formsubmit.co/24b60ba7ba2ccc74c838de11763f196d" method="POST" id="form">
-						<div class="nombre">
-							<h1>Nombre</h1>
-							<input type="text" name="name" required/>
-						</div>
-
-						<div class="correo">
-							<h1>Correo</h1>
-							<input type="email" name="email" required/>
-						</div>
-
-						<div class="mensaje">
-							<h1>Dime tu mensaje</h1>
-							<textarea name="subject" required></textarea>
-						</div>
-
-						<div class="boton">
-							<button type="submit">ENVIAR</button>
-						</div>
-						
-						<input type="hidden" name="_next" value="https://arieltesting.netlify.app/#inicio">
-						<input type="hidden" name="_captcha" value="false">
-					</form>
+					<Formulario/>
 				</div>
 			</section>
 
