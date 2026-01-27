@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --primary-blue: #0573C2;
+  --gray-text: #9C9C9C;
+  --gray-background: rgba(11, 11, 11, 0.87);
+  --dark-gray-background: #1E1E1E;
+  --secondary-background: #020202;
+  --transparent-background: rgba(11, 11, 11, 0.35);
+  --css-blue: #264DE4;
+  --tailwind-blue: #38BDF8;
+  --typescript-blue: #3178C6;
+  --react-blue: #58C4DC;
+  --git-orange: #DE4C36;
+  --gmail-orange: #EA4335;
+  --mongodb-green: #00ED64;
+  --javascript-yellow: #F0DB4F;
+  --nextjs-gray: rgba(255, 255, 255, 0.25);
+}
+
+@theme inline {
+  --primary-blue: var(--primary-blue);
+  --gray-text: var(--gray-text);
+  --gray-background: var(--gray-background);
+  --dark-gray-background: var(--dark-gray-background);
+  --secondary-background: var(--secondary-background);
+  --css-blue: var(--css-blue);
+  --tailwind-blue: var(--tailwind-blue);
+  --typescript-blue: var(--typescript-blue);
+  --react-blue: var(--react-blue);
+  --git-orange: var(--git-orange);
+  --gmail-orange: var(--gmail-orange);
+  --mongodb-green: var(--mongodb-green);
+  --javascript-yellow: var(--javascript-yellow);
+  --nextjs-gray: var(--nextjs-gray);
+}
+
+body {
+  background: black;
+  font-family: "Inter", sans-serif;
+}
