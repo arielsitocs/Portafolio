@@ -9,6 +9,7 @@ import TechIcon from "@/public/robotic-hand.png";
 import AboutMeIcon from "@/public/information.png";
 import ProjectsIcon from "@/public/backlog.png";
 import ContactIcon from "@/public/gmail.png";
+import DownloadIcon from "@/public/download-icon.svg";
 import background from "@/public/background.jpg";
 
 export default function Landing() {
@@ -32,7 +33,7 @@ export default function Landing() {
         <div className="flex gap-3 mt-4 mb-8">
           <LinkTo href="https://github.com/arielsitocs" icon={GithubIcon} />
           <LinkTo href="https://www.linkedin.com/in/ariel-escobar/" icon={LinkedinIcon} />
-          <LinkTo href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" icon={MailIcon} />
+          <LinkTo href="#contact" icon={MailIcon} />
         </div>
       </div>
 

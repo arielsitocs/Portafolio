@@ -3,7 +3,7 @@ import Image from "next/image";
 import ProjectTypes from "../../types/Project";
 
 import GitHubIcon from "@/public/github_icon.svg";
-import LinkIcon from "@/public/link_icon.png";
+import LinkIcon from "@/public/link-icon.svg";
 
 export default function Project({ name, description, image, technologies, repoLink, liveLink }: ProjectTypes) {
   return (
