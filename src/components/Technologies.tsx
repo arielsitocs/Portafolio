@@ -17,6 +17,8 @@ import GitHub from "@/public/github_icon.svg";
 import Prisma from "@/public/prisma_icon.svg";
 import NextJS from "@/public/nextjs_icon.svg";
 import TechIcon from "@/public/robotic-hand.png";
+import SpringBoot from "@/public/springboot_icon.svg";
+import Node from "@/public/node_icon.svg";
 
 export default function Technologies() {
   const technologies = [
@@ -51,14 +53,9 @@ export default function Technologies() {
       color: "var(--gray-text)"
     },
     {
-      name: "Postman",
-      icon: Postman,
-      color: "var(--git-orange)"
-    },
-    {
       name: "HTML",
       icon: HTML,
-      color: "var(--git-orange)"
+      color: "var(--html-orange)"
     },
     {
       name: "CSS",
@@ -86,10 +83,25 @@ export default function Technologies() {
       color: "var(--primary-blue)"
     },
     {
-      name: "NextJS",
+      name: "Postman",
+      icon: Postman,
+      color: "var(--postman-orange)"
+    },
+    {
+      name: "Node.js",
+      icon: Node,
+      color: "var(--node-green)"
+    },
+    {
+      name: "Next.js",
       icon: NextJS,
       color: "var(--nextjs-gray)"
     },
+    {
+      name: "SpringBoot",
+      icon: SpringBoot,
+      color: "var(--springboot-green)"
+    }
   ]
 
   return (

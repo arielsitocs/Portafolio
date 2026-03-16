@@ -11,11 +11,15 @@
   --tailwind-blue: #38BDF8;
   --typescript-blue: #3178C6;
   --react-blue: #58C4DC;
-  --git-orange: #DE4C36;
+  --git-orange: #F05032;
+  --postman-orange: #FF6C37;
+  --html-orange: #E34F26;
   --gmail-orange: #EA4335;
   --mongodb-green: #00ED64;
   --javascript-yellow: #F0DB4F;
   --nextjs-gray: rgba(255, 255, 255, 0.25);
+  --springboot-green: #6DB33F;
+  --node-green: #339939;
 }
 
 @theme inline {
@@ -33,6 +37,8 @@
   --mongodb-green: var(--mongodb-green);
   --javascript-yellow: var(--javascript-yellow);
   --nextjs-gray: var(--nextjs-gray);
+  --springboot-gray: var(--springboot-green);
+  --node-green: var(--node-green);
 }
 
 body {

@@ -23,7 +23,7 @@ export default function NavBar() {
           <a href="#about" className="hover:text-[var(--primary-blue)] border-b-3 border-transparent hover:border-b-[var(--primary-blue)] transition-all duration-200 text-[clamp(13px,0.8vw,20px)]">Sobre Mí</a>
           <a href="#contact" className="hover:text-[var(--primary-blue)] border-b-3 border-transparent hover:border-b-[var(--primary-blue)] transition-all duration-200 text-[clamp(13px,0.8vw,20px)]">Contacto</a>
         </div>
-        <a href="/CV-C.pdf" download="CV-Ariel-Escobar.pdf" target="_blank" className="flex justify-center items-center ml-auto mr-2 py-1 px-3 bg-[var(--primary-blue)] rounded-xl hidden sm:flex hover:shadow-[0_0_15px_var(--primary-blue)] hover:cursor-pointer transition-all duration-100">
+        <a href="/CV-D.pdf" download="CV-Ariel-Escobar.pdf" target="_blank" className="flex justify-center items-center ml-auto mr-2 py-1 px-3 bg-[var(--primary-blue)] rounded-xl hidden sm:flex hover:shadow-[0_0_15px_var(--primary-blue)] hover:cursor-pointer transition-all duration-100">
           <h1 className="text-white text-[clamp(13px,0.7vw,16px)]">Descargar CV</h1>
           <Image src={DownloadIcon} alt="Download Icon" width={28} height={28} />
         </a>
@@ -40,7 +40,7 @@ export default function NavBar() {
             <a href="#projects" className="flex justify-center items-center hover:text-[var(--primary-blue)] w-full h-10 hover:bg-[var(--dark-gray-background)] rounded-sm text-center transition-all duration-200 text-[clamp(13px,0.8vw,20px)]">Proyectos</a>
             <a href="#about" className="flex justify-center items-center hover:text-[var(--primary-blue)] w-full h-10 hover:bg-[var(--dark-gray-background)] rounded-sm text-center transition-all duration-200 text-[clamp(13px,0.8vw,20px)]">Sobre Mí</a>
             <a href="#contact" className="flex justify-center items-center hover:text-[var(--primary-blue)] w-full h-10 hover:bg-[var(--dark-gray-background)] rounded-sm text-center transition-all duration-200 text-[clamp(13px,0.8vw,20px)]">Contacto</a>
-            <a href="/CV-C.pdf" download="CV-Ariel-Escobar.pdf" target="_blank" className="flex justify-center items-center py-1 px-3 w-full bg-[var(--primary-blue)] rounded-sm hover:shadow-[0_0_12px_var(--primary-blue)] hover:cursor-pointer transition-all duration-100">
+            <a href="/CV-D.pdf" download="CV-Ariel-Escobar.pdf" target="_blank" className="flex justify-center items-center py-1 px-3 w-full bg-[var(--primary-blue)] rounded-sm hover:shadow-[0_0_12px_var(--primary-blue)] hover:cursor-pointer transition-all duration-100">
               <h1 className="text-white text-[clamp(13px,0.7vw,16px)]">Descargar CV</h1>
               <Image src={DownloadIcon} alt="Download Icon" width={28} height={28} />
             </a>

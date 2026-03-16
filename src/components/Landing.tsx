@@ -46,25 +46,25 @@ export default function Landing() {
 
         {/* 1. TECNOLOGIAS (Izquierda Arriba) - Ocupa 2 filas (50% altura izq) */}
 
-        <a href="#technologies" className="lg:col-start-1 lg:row-span-2 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center border-2 border-transparent text-white hover:border-2 hover:border-[var(--primary-blue)] hover:shadow-[0_0_10px_var(--primary-blue)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
+        <a href="#technologies" className="lg:col-start-1 lg:row-span-2 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center border-3 border-transparent text-white hover:border-3 hover:border-[var(--primary-blue)] hover:shadow-[0_0_15px_var(--primary-blue)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
           TECNOLOGIAS
           <Image src={TechIcon} alt="Code Icon" width={50} height={50} className="ml-3" />
         </a>
 
         {/* 2. PROYECTOS (Derecha Arriba) - Ocupa 3 filas (75% altura der) */}
-        <a href="#projects" className="lg:col-start-2 lg:row-span-3 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center border-2 border-transparent text-white hover:border-2 hover:border-[var(--primary-blue)] hover:shadow-[0_0_10px_var(--primary-blue)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
+        <a href="#projects" className="lg:col-start-2 lg:row-span-3 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center border-3 border-transparent text-white hover:border-3 hover:border-[var(--primary-blue)] hover:shadow-[0_0_15px_var(--primary-blue)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
           PROYECTOS
           <Image src={ProjectsIcon} alt="Code Icon" width={50} height={50} className="ml-3" />
         </a>
 
         {/* 3. SOBRE MÍ (Izquierda Abajo) - Ocupa 2 filas (50% altura izq) */}
-        <a href="#about" className="lg:col-start-1 lg:row-span-2 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center border-2 border-transparent text-white hover:border-2 hover:border-[var(--primary-blue)] hover:shadow-[0_0_10px_var(--primary-blue)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
+        <a href="#about" className="lg:col-start-1 lg:row-span-2 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center border-3 border-transparent text-white hover:border-3 hover:border-[var(--primary-blue)] hover:shadow-[0_0_15px_var(--primary-blue)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
           SOBRE MI
           <Image src={AboutMeIcon} alt="Code Icon" width={50} height={50} className="ml-2" />
         </a>
 
         {/* 4. CONTACTO (Derecha Abajo) - Ocupa 1 fila (25% altura der) */}
-        <a href="#contact" className="lg:col-start-2 lg:row-span-1 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center border-2 border-transparent text-white hover:border-2 hover:border-[var(--primary-blue)] hover:shadow-[0_0_10px_var(--primary-blue)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
+        <a href="#contact" className="lg:col-start-2 lg:row-span-1 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center border-3 border-transparent text-white hover:border-3 hover:border-[var(--primary-blue)] hover:shadow-[0_0_15px_var(--primary-blue)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
           CONTACTO
           <Image src={ContactIcon} alt="Code Icon" width={50} height={50} className="ml-3" />
         </a>
