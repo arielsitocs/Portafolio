@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Righteous } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
 
 const inter = Inter({
   variable: "--font-inter",
+  subsets: ["latin"],
+});
+
+const righteous = Righteous({
+  variable: "--font-righteous",
+  weight: '400',
   subsets: ["latin"],
 });
 
@@ -24,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth scroll-pt-20" >
       <body
-        className={`${inter.variable} antialiased`}
+        className={`${inter.variable} ${righteous.variable} antialiased`}
       >
         <Toaster />
         {children}

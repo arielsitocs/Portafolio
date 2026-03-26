@@ -27,7 +27,7 @@ export default function Project({ name, description, image, technologies, repoLi
           <Image src={LinkIcon} alt={name} width={28} height={28} className="fill-white" />
           <a href={liveLink}>Demostración</a>
         </div>
-        <div className="flex items-center gap-2 bg-[var(--secondary-background)] rounded-md px-4 py-2 hover:bg-[var(--primary-blue)] hover:cursor-pointer transition-all">
+        <div className="flex items-center gap-2 bg-[var(--secondary-background)] rounded-md px-4 py-2 hover:bg-[var(--light-primary-red)] hover:cursor-pointer transition-all">
           <Image src={GitHubIcon} alt={name} width={28} height={28} />
           <a href={repoLink}>Repositorio</a>
         </div>

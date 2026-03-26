@@ -25,13 +25,13 @@ export default function Projects() {
       liveLink: "https://click-for-seat.vercel.app/"
     },
     {
-      name: "Clocker (WIP)",
+      name: "Clocker",
       description: "Aplicación de reloj basada en la versión de Android, adoptando todas estas funciones para uso web y móvil.",
       image: Clocker,
       technologies: [
         "NextJS",
         "TypeScript",
-        "Crypto",
+        "Axios",
         "LocalStorage"
       ],
       repoLink: "https://github.com/arielsitocs/Clocker",

@@ -14,10 +14,10 @@ export default function NavBar() {
     // Menu principal del navbar //
     <>
       <nav className="flex fixed align-center w-full h-[7%] px-2 py-3 z-1000 bg-[var(--gray-background)]">
-        <a href="#landing" className="flex justify-center items-center px-5 py-2 bg-[var(--dark-gray-background)] border-2 border-[var(--primary-blue)] rounded-[100px] text-white">
-          <h1 className="font-bold text-[clamp(12px,0.8vw,18px)]">Ariel Escobar</h1>
+        <a href="#landing" className="flex justify-center items-center px-5 py-2 bg-[var(--dark-gray-background)] rounded-lg text-white">
+          <h1 className="font-medium font-righteous text-[clamp(15px,1vw,17px)]"><span className="">A</span>riel <span className="">E</span>scobar</h1>
         </a>
-        <div className="hidden sm:flex justify-center items-center gap-8 ml-[3%] text-white">
+        <div className="hidden sm:flex justify-center items-center gap-8 ml-[2%] text-white">
           <a href="#technologies" className="hover:text-[var(--primary-blue)] border-b-3 border-transparent hover:border-b-[var(--primary-blue)] transition-all duration-200 text-[clamp(13px,0.8vw,20px)]">Tecnologías</a>
           <a href="#projects" className="hover:text-[var(--primary-blue)] border-b-3 border-transparent hover:border-b-[var(--primary-blue)] transition-all duration-200 text-[clamp(13px,0.8vw,20px)]">Proyectos</a>
           <a href="#about" className="hover:text-[var(--primary-blue)] border-b-3 border-transparent hover:border-b-[var(--primary-blue)] transition-all duration-200 text-[clamp(13px,0.8vw,20px)]">Sobre Mí</a>

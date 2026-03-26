@@ -22,7 +22,7 @@ export default function About() {
       </div>
       <div className="flex md:flex-row flex-col justify-center items-center gap-4 mt-10 md:mt-20">
         <div className="flex flex-col md:mb-0 mb-10 items-center gap-4 text-white flex-none">
-          <h1 className="text-[clamp(24px,1.7vw,60px)] font-bold"><span className="text-[var(--primary-blue)]">A</span>riel <span className="text-[var(--primary-blue)]">E</span>scobar</h1>
+          <h1 className="text-[clamp(24px,1.7vw,60px)] font-bold"><span className="text-[var(--primary-blue)]">A</span>riel <span className="text-[var(--light-primary-red)]">E</span>scobar</h1>
           <Image src={Ariel} alt="Ariel Escobar" className="rounded-full shadow-[15px_0px_0px_0px_var(--primary-blue)] md:w-[270px] md:h-[270px] w-[200px] h-[220 px]" />
         </div>
         <div className="flex flex-col gap-4 text-white md:ml-10">
