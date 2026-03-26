@@ -5,10 +5,10 @@ import CodeIcon from "@/public/code.png";
 import GithubIcon from "@/public/github_icon.svg";
 import LinkedinIcon from "@/public/linkedin-icon.png";
 import MailIcon from "@/public/mail-icon.svg";
-import TechIcon from "@/public/robotic-hand.png";
-import AboutMeIcon from "@/public/information.png";
-import ProjectsIcon from "@/public/backlog.png";
-import ContactIcon from "@/public/gmail.png";
+import TechIcon from "@/public/technology-icon.svg";
+import InfoIcon from "@/public/info-icon.svg";
+import ProjectsIcon from "@/public/projects-icon.svg";
+import ContactIcon from "@/public/contact-icon.svg";
 import background from "@/public/background.jpg";
 
 export default function Landing() {
@@ -17,9 +17,8 @@ export default function Landing() {
       <div className="flex-none">
         <div className="flex items-center gap-4">
           <h1 className="text-white font-bold text-[clamp(20px,1.7vw,100px)]">
-            Desarrollador <span className="text-[var(--primary-blue)] font-righteous border-b-4 border-[var(--primary-blue)]">FullStack</span> & <span className="text-[var(--light-primary-red)] font-righteous border-b-4 border-[var(--light-primary-red)]">FreeLancer</span>
+            Desarrollador <span className="text-[var(--primary-blue)] font-righteous border-b-4 border-[var(--primary-blue)]">FullStack</span> & <span className="text-[var(--light-primary-red)] font-righteous border-b-4 border-[var(--light-primary-red)]">FreeLancer.</span>
           </h1>
-          <Image src={CodeIcon} alt="Code Icon" width={50} height={50} />
         </div>
 
         <div>
@@ -40,29 +39,41 @@ export default function Landing() {
       */}
       <div className="flex-1 grid grid-cols-1 gap-2 lg:grid-cols-[1fr_1.5fr] lg:grid-rows-4">
 
-        {/* 1. TECNOLOGIAS (Izquierda Arriba) - Ocupa 2 filas (50% altura izq) */}
-
-        <a href="#technologies" className="lg:col-start-1 lg:row-span-2 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center text-white border-b-6 border-b-transparent hover:border-b-[var(--light-primary-red)] hover:bg-[var(--gray-background)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
+        {/* 1. TECNOLOGIAS (Izquierda Arriba) */}
+        <a href="#technologies" className="lg:col-start-1 lg:row-span-2 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center text-white border-b-6 border-b-transparent hover:border-b-[var(--light-primary-red)] hover:text-[var(--light-primary-red)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px] group">
           TECNOLOGIAS
-          <Image src={TechIcon} alt="Code Icon" width={50} height={50} className="ml-3" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-3 transition-colors">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
         </a>
 
-        {/* 2. PROYECTOS (Derecha Arriba) - Ocupa 3 filas (75% altura der) */}
-        <a href="#projects" className="lg:col-start-2 lg:row-span-3 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center text-white border-b-6 border-b-transparent hover:border-b-[var(--light-primary-red)] hover:bg-[var(--gray-background)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
+        {/* 2. PROYECTOS (Derecha Arriba) */}
+        <a href="#projects" className="lg:col-start-2 lg:row-span-3 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center text-white border-b-6 border-b-transparent hover:border-b-[var(--light-primary-red)] hover:text-[var(--light-primary-red)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px] group">
           PROYECTOS
-          <Image src={ProjectsIcon} alt="Code Icon" width={50} height={50} className="ml-3" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-3 transition-colors">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+          </svg>
         </a>
 
-        {/* 3. SOBRE MÍ (Izquierda Abajo) - Ocupa 2 filas (50% altura izq) */}
-        <a href="#about" className="lg:col-start-1 lg:row-span-2 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center text-white border-b-6 border-b-transparent hover:border-b-[var(--light-primary-red)] hover:bg-[var(--gray-background)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
+        {/* 3. SOBRE MÍ (Izquierda Abajo) */}
+        <a href="#about" className="lg:col-start-1 lg:row-span-2 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center text-white border-b-6 border-b-transparent hover:border-b-[var(--light-primary-red)] hover:text-[var(--light-primary-red)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px] group">
           SOBRE MI
-          <Image src={AboutMeIcon} alt="Code Icon" width={50} height={50} className="ml-2" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-3 transition-colors">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
         </a>
 
-        {/* 4. CONTACTO (Derecha Abajo) - Ocupa 1 fila (25% altura der) */}
-        <a href="#contact" className="lg:col-start-2 lg:row-span-1 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center text-white border-b-6 border-b-transparent hover:border-b-[var(--light-primary-red)] hover:bg-[var(--gray-background)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px]">
+        {/* 4. CONTACTO (Derecha Abajo) */}
+        <a href="#contact" className="lg:col-start-2 lg:row-span-1 bg-[var(--transparent-background)] rounded-lg flex items-center justify-center text-white border-b-6 border-b-transparent hover:border-b-[var(--light-primary-red)] hover:text-[var(--light-primary-red)] transition-all text-[clamp(16px,1vw,20px)] backdrop-blur-[6px] group">
           CONTACTO
-          <Image src={ContactIcon} alt="Code Icon" width={50} height={50} className="ml-3" />
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-3 transition-colors">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
         </a>
 
       </div>
