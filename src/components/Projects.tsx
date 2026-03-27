@@ -26,7 +26,7 @@ export default function Projects() {
     },
     {
       name: "Clocker",
-      description: "Aplicación de reloj basada en la versión de Android, adoptando todas estas funciones para uso web y móvil.",
+      description: "Aplicación de reloj basada en la de Android, adoptando sus funciones para uso web y móvil.",
       image: Clocker,
       technologies: [
         "NextJS",
@@ -51,7 +51,7 @@ export default function Projects() {
 
         <div>
           <p className="text-gray-400 mt-2">
-            Los proyectos que he realizado con el fin de poder demostrar mis habilidades al publico.</p>
+            Proyectos destacados que he realizado con el fin de poder demostrar mis habilidades al publico.</p>
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center">

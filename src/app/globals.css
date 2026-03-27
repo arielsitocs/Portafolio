@@ -4,11 +4,12 @@
   --primary-blue: #0573C2;
   --light-primary-blue: #0573c2a7; 
   --light-primary-red: #ea2845e4;
+  --primary-gradient: linear-gradient(303deg,rgba(234, 40, 69, 0.494) 22%, rgba(5, 115, 194, 0.471) 87%);
   --gray-text: #9C9C9C;
   --gray-background: rgba(11, 11, 11, 0.87);
   --dark-gray-background: #1E1E1E;
   --secondary-background: #020202;
-  --transparent-background: rgba(11, 11, 11, 0.35);
+  --transparent-background: rgba(11, 11, 11, 0.436);
   --css-blue: #264DE4;
   --tailwind-blue: #38BDF8;
   --typescript-blue: #3178C6;
@@ -27,25 +28,27 @@
 
 @theme inline {
   --font-righteous: var(--font-righteous);
-  --primary-blue: var(--primary-blue);
-  --light-primary-blue: var(--light-primary-blue);
-  --light-primary-red: var(--light-primary-red);
-  --gray-text: var(--gray-text);
-  --gray-background: var(--gray-background);
-  --dark-gray-background: var(--dark-gray-background);
-  --secondary-background: var(--secondary-background);
-  --css-blue: var(--css-blue);
-  --tailwind-blue: var(--tailwind-blue);
-  --typescript-blue: var(--typescript-blue);
-  --react-blue: var(--react-blue);
-  --git-orange: var(--git-orange);
-  --gmail-orange: var(--gmail-orange);
-  --mongodb-green: var(--mongodb-green);
-  --javascript-yellow: var(--javascript-yellow);
-  --nextjs-gray: var(--nextjs-gray);
-  --springboot-gray: var(--springboot-green);
-  --node-green: var(--node-green);
-  --nest-red: var(--nest-red)
+  --color-primary-blue: var(--primary-blue);
+  --color-light-primary-blue: var(--light-primary-blue);
+  --color-light-primary-red: var(--light-primary-red);
+  --background-image-primary-gradient: var(--primary-gradient);
+  --color-gray-text: var(--gray-text);
+  --color-gray-background: var(--gray-background);
+  --color-dark-gray-background: var(--dark-gray-background);
+  --color-secondary-background: var(--secondary-background);
+  --color-transparent-background: var(--transparent-background);
+  --color-css-blue: var(--css-blue);
+  --color-tailwind-blue: var(--tailwind-blue);
+  --color-typescript-blue: var(--typescript-blue);
+  --color-react-blue: var(--react-blue);
+  --color-git-orange: var(--git-orange);
+  --color-gmail-orange: var(--gmail-orange);
+  --color-mongodb-green: var(--mongodb-green);
+  --color-javascript-yellow: var(--javascript-yellow);
+  --color-nextjs-gray: var(--nextjs-gray);
+  --color-springboot-green: var(--springboot-green);
+  --color-node-green: var(--node-green);
+  --color-nest-red: var(--nest-red);
 }
 
 body {
