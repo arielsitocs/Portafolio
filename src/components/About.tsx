@@ -5,7 +5,7 @@ import Ariel from "../../public/Ariel.jpeg";
 
 export default function About() {
   return (
-    <section id="about" className="relative w-full min-h-fit px-4 lg:px-44 py-30 flex flex-col bg-secondary-background overflow-hidden">
+    <section id="about" className="relative w-full min-h-fit px-4 lg:px-44 py-20 flex flex-col overflow-hidden border-b-3 border-gray-background">
       <div className="flex-none">
         <div className="flex items-center gap-4">
           <h1 className="text-white font-bold text-[clamp(23px,1.7vw,100px)]">

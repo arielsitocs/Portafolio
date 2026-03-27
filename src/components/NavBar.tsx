@@ -14,7 +14,7 @@ export default function NavBar() {
     // Menu principal del navbar //
     <>
       <nav className="flex fixed align-center w-full h-[7%] px-2 py-3 z-1000 bg-gray-background">
-        <a href="#landing" className="flex justify-center items-center px-5 py-2 bg-primary-gradient rounded-lg text-white">
+        <a href="#landing" className="flex justify-center items-center px-5 py-2 bg-dark-gray-background rounded-lg text-white">
           <h1 className="font-medium font-righteous text-[clamp(15px,1vw,17px)]">Ariel Escobar</h1>
         </a>
         <div className="hidden sm:flex justify-center items-center gap-8 ml-[2%] text-white">

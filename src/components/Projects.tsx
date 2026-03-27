@@ -40,7 +40,7 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="w-full min-h-fit px-4 lg:px-44 py-10 flex flex-col">
+    <section id="projects" className="w-full min-h-fit px-4 lg:px-44 py-10 flex flex-col border-b-3 border-gray-background">
       <div className="flex-none mb-10">
         <div className="flex items-center gap-4">
           <h1 className="text-white font-bold text-[clamp(23px,1.7vw,100px)]">

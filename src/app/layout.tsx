@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Righteous } from "next/font/google";
+
 import { Toaster } from "sonner";
+
+import CursorGlow from "../components/ui/CursorGlow";
+
 import "./globals.css";
 
 const inter = Inter({
@@ -33,6 +37,7 @@ export default function RootLayout({
         className={`${inter.variable} ${righteous.variable} antialiased`}
       >
         <Toaster />
+        <CursorGlow />
         {children}
       </body>
     </html>
