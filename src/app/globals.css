@@ -3,10 +3,11 @@
 :root {
   --primary-blue: #0573C2;
   --light-primary-blue: #0f9bff; 
-  --light-primary-red: #ea2845e4;
-  --primary-gradient: linear-gradient(303deg,rgba(255, 0, 38, 0.386) 22%, rgba(0, 149, 255, 0.614) 87%);
-  --landing-gradient: linear-gradient(303deg,rgba(234, 40, 69, 0.412) 22%, rgba(3, 150, 255, 0.475) 90%);
-  --gray-text: #bdbdbd;
+  --light-primary-red: rgba(234, 40, 69, 0.894);
+  --primary-gradient: linear-gradient(303deg,rgba(255, 0, 38, 0.232) 22%, rgba(0, 149, 255, 0.237) 87%);
+  --landing-gradient: linear-gradient(303deg,rgba(234, 40, 69, 0.052) 22%, rgba(3, 150, 255, 0.052) 90%);
+  --gray-text: rgb(151, 151, 151);
+  --dark-text: #565656;
   --gray-background: rgba(11, 11, 11, 0.87);
   --dark-gray-background: #1E1E1E;
   --secondary-background: #020202;
@@ -34,6 +35,7 @@
   --color-light-primary-red: var(--light-primary-red);
   --background-image-primary-gradient: var(--primary-gradient);
   --background-image-landing-gradient:var(--landing-gradient);
+  --color-dark-text: var(--dark-text);
   --color-gray-text: var(--gray-text);
   --color-gray-background: var(--gray-background);
   --color-dark-gray-background: var(--dark-gray-background);
