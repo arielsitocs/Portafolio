@@ -40,8 +40,8 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="w-full min-h-fit px-4 lg:px-44 py-40 flex flex-col">
-      <div className="grid md:grid-cols-[35%_70%] grid-cols-1 gap-10">
+    <section id="contact" className="w-full min-h-fit px-4 xl:px-44 py-40 flex flex-col">
+      <div className="grid lg:grid-cols-[30%_70%] grid-cols-1 gap-10">
         <div className="flex flex-col justify-center items-center gap-1 text-white text-center">
           <h1 className="text-[clamp(24px,1.5vw,60px)] font-bold">¿Algo captó tu atención?</h1>
           <h1 className="text-[clamp(24px,1.4vw,60px)] font-bold">Envíame un correo aquí</h1>

@@ -112,7 +112,7 @@ export default function Technologies() {
   ]
 
   return (
-    <section id="technologies" className="w-full min-h-[100vh] px-4 lg:px-44 py-10 flex flex-col bg-secondary-background border-b-3 border-gray-background">
+    <section id="technologies" className="w-full min-h-[100vh] px-4 xl:px-44 py-10 flex flex-col bg-secondary-background border-b-3 border-gray-background">
       <div className="flex-none mb-10">
         <div className="flex items-center gap-4">
           <h1 className="text-white font-bold text-[clamp(23px,1.7vw,100px)]">
