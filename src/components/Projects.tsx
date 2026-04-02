@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import ClickForSeat from "@/public/ClickForSeat.png";
+import TellMe from "@/public/TellMe.png";
 import Clocker from "@/public/Clocker.png";
 import ProjectIcon from "@/public/start-up.png";
 
@@ -11,18 +11,18 @@ import ProjectTypes from "../types/Project";
 export default function Projects() {
   const projects: ProjectTypes[] = [
     {
-      name: "ClickForSeat",
-      description: "Sistema de reservación de asientos para múltiples funciones de cine.",
-      image: ClickForSeat,
+      name: "TellMe",
+      description: "Red social enfocada a publicaciones de texto o imagenes. (WIP | /feed, /login, /register y /profile disponibles en frontend) ",
+      image: TellMe,
       technologies: [
         "NextJS",
         "TypeScript",
         "PostgreSQL",
-        "Express",
+        "NestJS",
         "Tailwind"
       ],
-      repoLink: "https://github.com/arielsitocs/ClickForSeat",
-      liveLink: "https://click-for-seat.vercel.app/"
+      repoLink: "https://github.com/arielsitocs/TellMe",
+      liveLink: "https://tell-me-xnvh.vercel.app/"
     },
     {
       name: "Clocker",
