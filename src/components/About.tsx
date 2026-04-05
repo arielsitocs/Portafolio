@@ -1,36 +1,25 @@
 import Image from "next/image";
 
-import InfoIcon from "../../public/information.png";
 import Ariel from "../../public/Ariel.jpeg";
 
 export default function About() {
   return (
-    <section id="about" className="relative w-full min-h-fit px-4 lg:px-44 py-20 flex flex-col overflow-hidden border-b-3 border-gray-background">
-      <div className="flex-none">
-        <div className="flex items-center gap-4">
-          <h1 className="text-white font-bold text-[clamp(23px,1.7vw,100px)]">
-            Conóceme un Poco
-          </h1>
-          <Image src={InfoIcon} alt="Code Icon" width={50} height={50} />
-        </div>
+    <section id="about" className="w-full flex flex-col justify-center px-2 md:px-10 py-50 border-b-2 border-main-border">
+      <div className="text-main-text font-sans font-medium">
+        <h3 className="font-mono font-normal text-title mb-4">-- SOBRE MÍ</h3>
+        <h1 className="text-[clamp(20px,5vw,40px)]">Ariel Escobar<span className="text-title">.</span></h1>
+      </div>
+      <div className="flex flex-col md:flex-row items-center mt-5">
 
-        <div>
-          <p className="text-gray-400 mt-2">
-            Aquí puedes saber un poco mas sobre mi, acerca de lo que pienso y mi proyección hacia el futuro.
-          </p>
+        <div className="">
+          <div className="flex flex-col gap-3">
+            <h1 className="text-main-text text-2xl">Conectando la <span className="text-title">tecnología</span> con <span className="text-red">las necesidades</span> reales de las personas.</h1>
+            <p className="text-gray-text max-w-full lg:max-w-[50%]">No me conformo con que la tecnología solo funcione, quiero que aporte <span>valor real</span>. Me encanta el desarrollo, pero siempre con los pies en la tierra.
+              Mi trabajo se centra en entender el <span className="text-main-text">"por qué"</span> antes de saltar al "cómo". Me motiva transformar desafíos complejos en plataformas fáciles de usar que generen un <span className="text-main-text">impacto real</span>.
+              Creo firmemente en el aprendizaje constante y en que, trabajando juntos, podemos usar la tecnología para hacer lo imposible, posible.</p>
+          </div>
         </div>
       </div>
-      <div className="flex md:flex-row flex-col justify-center items-center gap-4 mt-10 md:mt-20">
-        <div className="flex flex-col md:mb-0 mb-10 items-center gap-4 text-white flex-none">
-          <Image src={Ariel} alt="Ariel Escobar" className="rounded-full shadow-[15px_0px_0px_0px_var(--primary-blue)] md:w-[270px] md:h-[270px] w-[200px] h-[220 px]" />
-        </div>
-        <div className="flex flex-col gap-4 text-white md:ml-10">
-          <h1 className="font-bold text-[clamp(24px,1.3vw,40px)]">Conectando la <span className="text-primary-blue">tecnología</span> con las <span className="text-light-primary-red">necesidades reales</span> de las personas.</h1>
-          <p className="md:w-[80%] w-[100%] text-[clamp(16px,1.2vw,18px)]">No me conformo con que la tecnología solo funcione, quiero que aporte <span className="text-primary-blue">valor real</span>. Me encanta el <span className="text-light-primary-red">desarrollo tecnológico</span>, pero siempre con los pies en la tierra.</p>
-          <p className="md:w-[80%] w-[100%] text-[clamp(16px,1.2vw,18px)]">Mi trabajo en el desarrollo se centra en entender los <span className="text-primary-blue">"por qué"</span> antes de saltar a los <span className="text-light-primary-red">"cómo"</span>. Me motiva transformar desafíos complejos en plataformas y aplicaciones que sean fáciles de usar y que generen un <span className="text-primary-blue">impacto real</span>. Soy un firme creyente en el <span className="text-light-primary-red">aprendizaje constante</span>, en escuchar activamente y en que, trabajando juntos, podemos usar la tecnologia para hacer lo imposible, posible.</p>
-        </div>
-      </div>
-
     </section>
 
   )

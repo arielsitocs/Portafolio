@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
-import { Inter, Righteous } from "next/font/google";
+import { DM_Sans, DM_Mono } from "next/font/google";
 
 import { Toaster } from "sonner";
 
-import CursorGlow from "../components/ui/CursorGlow";
-
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const DMsans = DM_Sans({
+  variable: "--font-dmsans",
   subsets: ["latin"],
 });
 
-const righteous = Righteous({
-  variable: "--font-righteous",
-  weight: '400',
+const DMmono = DM_Mono({
+  variable: "--font-dmmono",
+  weight: ['400', '300'],
   subsets: ["latin"],
 });
 
@@ -32,12 +30,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth scroll-pt-20" >
+    <html lang="es" className="scroll-smooth scroll-pt-20 px-3" >
       <body
-        className={`${inter.variable} ${righteous.variable} antialiased`}
+        className={`${DMsans.variable} ${DMmono.variable} antialiased`}
       >
         <Toaster />
-        <CursorGlow />
         {children}
       </body>
     </html>

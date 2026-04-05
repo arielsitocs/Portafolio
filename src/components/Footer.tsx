@@ -1,8 +1,8 @@
 
 export default function Footer() {
   return (
-    <footer className="w-full h-[70px] flex items-center justify-center border-t-3 border-gray-background">
-      <p className="text-gray-text text-[clamp(11px,1.5vw,16px)]">©2026 <span className="text-light-primary-red">Ariel Escobar</span> - Todos los derechos reservados.</p>
+    <footer className="flex justify-center items-center w-full h-[60px] bg-secondary-background">
+      <p className="text-gray-text font-sans text-[clamp(12px,2vw,16px)]">Ariel Escobar — Software Engineer © {new Date().getFullYear()} • Hecho con Next.js</p>
     </footer>
   )
 }

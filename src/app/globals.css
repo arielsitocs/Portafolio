@@ -1,61 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --primary-blue: #0573C2;
-  --light-primary-blue: #0f9bff; 
-  --light-primary-red: rgba(234, 40, 69, 0.894);
-  --primary-gradient: linear-gradient(303deg,rgba(255, 0, 38, 0.232) 22%, rgba(0, 149, 255, 0.237) 87%);
-  --landing-gradient: linear-gradient(303deg,rgba(234, 40, 69, 0.052) 22%, rgba(3, 150, 255, 0.052) 90%);
-  --gray-text: rgb(151, 151, 151);
-  --dark-text: #565656;
-  --gray-background: rgba(11, 11, 11, 0.87);
-  --dark-gray-background: #1E1E1E;
-  --secondary-background: #020202;
-  --transparent-background: rgba(11, 11, 11, 0.436);
-  --css-blue: #264DE4;
-  --tailwind-blue: #38BDF8;
-  --typescript-blue: #3178C6;
-  --react-blue: #58C4DC;
-  --git-orange: #F05032;
-  --postman-orange: #FF6C37;
-  --html-orange: #E34F26;
-  --gmail-orange: #EA4335;
-  --mongodb-green: #00ED64;
-  --javascript-yellow: #F0DB4F;
-  --nextjs-gray: rgba(255, 255, 255, 0.25);
-  --springboot-green: #6DB33F;
-  --node-green: #339939;
-  --nest-red: #EA2845;
+  /* Colores - fondos */
+  --page-background: #0a0a0f;
+  --secondary-background: #111118;
+  --terciary-backgound: #16161f;
+  --alternative-background: #25252ca9;
+  --main-border: #ffffff12;
+  --secondary-border: #ffffff1f;
+  /* Colores de texto */
+  --main-text: #e8e8f0;
+  --gray-text: #7a7a8c;
+  /* Colores - acentos */
+  --title: #6c8ef5;
+  --red: #f87171;
+  --green: #4ade80;
+  /* Colores de tecnologias */
+  --typescript-blue: #1a3744;
+  --javascript-yellow: #2d2414;
+  --react-blue: #1a2a36;
+  --mongodb-green: #0f2517;
+  --postgresql-blue: #1a2048;
+  --tailwind-blue: #0f2228;
+  --git-orange: #2a1010;
+  --prisma-blue: #111a2a;
+  --postman-orange: #2a1812;
 }
 
 @theme inline {
-  --font-righteous: var(--font-righteous);
-  --color-primary-blue: var(--primary-blue);
-  --color-light-primary-blue: var(--light-primary-blue);
-  --color-light-primary-red: var(--light-primary-red);
-  --background-image-primary-gradient: var(--primary-gradient);
-  --background-image-landing-gradient:var(--landing-gradient);
-  --color-dark-text: var(--dark-text);
-  --color-gray-text: var(--gray-text);
-  --color-gray-background: var(--gray-background);
-  --color-dark-gray-background: var(--dark-gray-background);
+  --font-sans: var(--font-dmsans);
+  --font-mono: var(--font-dmmono);
+  --color-page-background: var(--page-background);
   --color-secondary-background: var(--secondary-background);
-  --color-transparent-background: var(--transparent-background);
-  --color-css-blue: var(--css-blue);
-  --color-tailwind-blue: var(--tailwind-blue);
+  --color-terciary-backgound: var(--terciary-backgound);
+  --color-alternative-background: var(--alternative-background);
+  --color-main-border: var(--main-border);
+  --color-secondary-border: var(--secondary-border);
+  --color-main-text: var(--main-text);
+  --color-gray-text: var(--gray-text);
+  --color-title: var(--title);
+  --color-red: var(--red);
+  --color-green: var(--green);
   --color-typescript-blue: var(--typescript-blue);
-  --color-react-blue: var(--react-blue);
-  --color-git-orange: var(--git-orange);
-  --color-gmail-orange: var(--gmail-orange);
-  --color-mongodb-green: var(--mongodb-green);
   --color-javascript-yellow: var(--javascript-yellow);
-  --color-nextjs-gray: var(--nextjs-gray);
-  --color-springboot-green: var(--springboot-green);
-  --color-node-green: var(--node-green);
-  --color-nest-red: var(--nest-red);
+  --color-react-blue: var(--react-blue);
+  --color-mongodb-green: var(--mongodb-green);
+  --color-postgresql-blue: var(--postgresql-blue);
+  --color-tailwind-blue: var(--tailwind-blue);
+  --color-git-orange: var(--git-orange);
+  --color-prisma-blue: var(--prisma-blue);
+  --color-postman-orange: var(--postman-orange);
 }
 
 body {
-  background: black;
-  font-family: "Inter", sans-serif;
+  background: var(--page-background);
 }

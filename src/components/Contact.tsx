@@ -1,7 +1,5 @@
 "use client"
 
-import Image from "next/image";
-
 import emailjs from "@emailjs/browser";
 
 import { useRef } from "react";
@@ -9,8 +7,6 @@ import { useRef } from "react";
 import { useState } from "react";
 
 import { toast } from "sonner";
-
-import GmailIcon from "../../public/gmail.png";
 
 
 export default function Contact() {
@@ -36,26 +32,37 @@ export default function Contact() {
     }, (error) => {
       toast.error("Error al enviar el correo");
       console.error(error);
+      setSending(false);
     });
   }
 
   return (
-    <section id="contact" className="w-full min-h-fit px-4 xl:px-44 py-40 flex flex-col">
-      <div className="grid lg:grid-cols-[30%_70%] grid-cols-1 gap-10">
-        <div className="flex flex-col justify-center items-center gap-1 text-white text-center">
-          <h1 className="text-[clamp(24px,1.5vw,60px)] font-bold">¿Algo captó tu atención?</h1>
-          <h1 className="text-[clamp(24px,1.4vw,60px)] font-bold">Envíame un correo aquí</h1>
-          <p className="text-gray-text mt-2">Puedes enviarme un correo para contactarme, ya sea para comentar una idea o conocerme un poco más si te interesa trabajar conmigo.</p>
-          <Image src={GmailIcon} alt="Gmail Icon" width={100} height={100} className="mt-5" />
+    <section id="contact" className="w-full flex flex-col items-center justify-center px-2 md:px-10 p-30 border-b-2 border-main-border">
+      <div className="w-fit p-2 md:p-15 bg-secondary-background rounded-lg border-1 border-main-border">
+        <div className="flex flex-col gap-4 text-center">
+          <h3 className="font-mono text-title">-- CONTACTO</h3>
+          <h1 className="text-main-text font-sans font-medium text-[27px]">¿Algo captó tu atención?</h1>
+          <p className="font-sans text-gray-text">Envíame un mensaje y conversemos sobre tu próximo proyecto.</p>
         </div>
-        <div>
-          <form onSubmit={sendEmail} ref={formRef} className="flex flex-col gap-6 bg-gray-background p-5 rounded-lg">
-            <input type="text" placeholder="Nombre Completo..." name="user_name" required className="bg-black text-white px-2 py-4 rounded-lg" />
-            <input type="email" placeholder="Correo Electrónico..." name="user_email" required className="bg-black text-white px-2 py-4 rounded-lg" />
-            <textarea placeholder="¿Cómo te puedo ayudar?" name="message" rows={6} required className="bg-black text-white px-2 py-4 rounded-lg resize-none" />
-            <button type="submit" className={`bg-gmail-orange text-white px-2 py-4 md:w-[70%] w-full self-center rounded-lg hover:opacity-80 hover:translate-y-[-6px] hover:cursor-pointer transition-all ${sending ? 'opacity-50 disabled' : ''}`}>{sending ? 'Enviando...' : 'Enviar'}</button>
-          </form>
-        </div>
+        <form ref={formRef} onSubmit={sendEmail} className="flex flex-col gap-5 mt-10">
+          <div>
+            <h3 className="font-mono text-sm text-gray-text mb-1">NOMBRE</h3>
+            <input type="text" name="user_name" placeholder="Tu nombre completo" className="w-full bg-secondary-border border-1 border-main-border rounded-lg px-3 py-2 text-gray-text" required />
+          </div>
+          <div>
+            <h3 className="font-mono text-sm text-gray-text mb-1">CORREO</h3>
+            <input type="email" name="user_email" placeholder="Tu correo electrónico" className="w-full bg-secondary-border border-1 border-main-border rounded-lg px-3 py-2 text-gray-text" required />
+          </div>
+          <div>
+            <h3 className="font-mono text-sm text-gray-text mb-1">MENSAJE</h3>
+            <textarea name="message" placeholder="¿Como te puedo ayudar hoy?" rows={5} className="w-full resize-none bg-secondary-border border-1 border-main-border rounded-lg px-3 py-2 text-gray-text" required />
+          </div>
+          <div className="mt-5">
+            <button type="submit" disabled={sending} className="w-full py-2 border-1 border-secondary-border rounded-lg text-main-text hover:bg-title cursor-pointer transition-all disabled:opacity-60 disabled:cursor-not-allowed">
+              {sending ? "Enviando..." : "Enviar mensaje"}
+            </button>
+          </div>
+        </form>
       </div>
     </section>
   )

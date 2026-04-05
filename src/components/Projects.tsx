@@ -1,18 +1,19 @@
 import Image from "next/image";
 
-import TellMe from "@/public/TellMe.png";
-import Clocker from "@/public/Clocker.png";
-import ProjectIcon from "@/public/start-up.png";
-
 import Project from "./ui/Project";
 
 import ProjectTypes from "../types/Project";
+
+import Clocker from "@/public/Clocker.png";
+import TellMe from "@/public/TellMe.png";
 
 export default function Projects() {
   const projects: ProjectTypes[] = [
     {
       name: "TellMe",
       description: "Red social enfocada a publicaciones de texto o imagenes. (WIP | /feed, /login, /register y /profile disponibles en frontend) ",
+      number: "01",
+      type: "Red Social",
       image: TellMe,
       technologies: [
         "NextJS",
@@ -27,6 +28,8 @@ export default function Projects() {
     {
       name: "Clocker",
       description: "Aplicación de reloj basada en la de Android, adoptando sus funciones para uso web y móvil.",
+      number: "02",
+      type: "Utilidad",
       image: Clocker,
       technologies: [
         "NextJS",
@@ -40,24 +43,26 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="w-full min-h-fit px-4 xl:px-44 py-10 flex flex-col border-b-3 border-gray-background">
-      <div className="flex-none mb-10">
-        <div className="flex items-center gap-4">
-          <h1 className="text-white font-bold text-[clamp(23px,1.7vw,100px)]">
-            Mis Proyectos
-          </h1>
-          <Image src={ProjectIcon} alt="Code Icon" width={50} height={50} />
-        </div>
-
-        <div>
-          <p className="text-gray-400 mt-2">
-            Proyectos destacados que he realizado con el fin de poder demostrar mis habilidades al publico.</p>
-        </div>
+    <section id="projects" className="w-full flex flex-col justify-center px-2 md:px-10 min-h-[100vh] pt-[80px] pb-[80px] border-b-2 border-main-border">
+      <div className="text-main-text font-sans font-medium">
+        <h3 className="font-mono font-normal text-title mb-4">-- TRABAJO</h3>
+        <h1 className="text-[clamp(20px,5vw,40px)] mb-2">Proyectos<span className="text-title">.</span></h1>
+        <p className="text-gray-text mb-5">Proyectos destacados que demuestran mis habilidades.</p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 items-center justify-center">
+      <div className="flex flex-col gap-2">
         {
-          projects.map((project) => (
-            <Project key={project.name} name={project.name} description={project.description} image={project.image} technologies={project.technologies} repoLink={project.repoLink} liveLink={project.liveLink} />
+          projects.map((p) => (
+            <Project
+              key={p.name}
+              name={p.name}
+              description={p.description}
+              number={p.number}
+              type={p.type}
+              image={p.image}
+              technologies={p.technologies}
+              repoLink={p.repoLink}
+              liveLink={p.liveLink}
+            />
           ))
         }
       </div>

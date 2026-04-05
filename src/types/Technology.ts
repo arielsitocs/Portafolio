@@ -1,6 +1,10 @@
+import type { IconType } from "react-icons";
+
 interface TechnologyTypes {
   name: string;
-  icon: any;
+  icono: IconType;
+  iconSize?: number;
+  iconColor?: string;
   color: string;
 }
 

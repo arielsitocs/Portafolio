@@ -1,18 +1,13 @@
 import TechnologyTypes from "../../types/Technology";
 
-import Image from "next/image";
-
-export default function Technology({ name, icon, color }: TechnologyTypes) {
+export default function Technology({ name, icono: Icon, iconSize = 30, iconColor = "var(--main-text)", color }: TechnologyTypes) {
   return (
-    <div
-      className="flex flex-col justify-center items-center h-[100px] sm:h-[130px] p-10 rounded-lg hover:cursor-pointer hover:translate-y-[-5px] hover:opacity-90 transition-all duration-300"
-      style={{
-        background: color
-      }}
-    >
-      <div className="flex md:flex-row flex-col items-center gap-4 text-white">
-        <Image src={icon} alt={name} width={56} height={62} className="md:w-[56px] md:h-[62px] w-[40px] h-[46px]" />
-        <h1>{name}</h1>
+    <div className="flex items-center bg-secondary-background w-full p-3 md:p-5 hover:bg-main-border">
+      <div className="flex items-center justify-center rounded-md bg-alternative-background p-2" title={name}>
+        <Icon size={iconSize} style={{ color: iconColor }} aria-hidden="true" />
+      </div>
+      <div>
+        <h1 className="text-main-text font-medium ml-2">{name}</h1>
       </div>
     </div>
   )

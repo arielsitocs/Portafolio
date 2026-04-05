@@ -2,40 +2,28 @@ import Image from "next/image";
 
 import ProjectTypes from "../../types/Project";
 
-import GitHubIcon from "@/public/github_icon.svg";
-import LinkIcon from "@/public/link-icon.svg";
-
-export default function Project({ name, description, image, technologies, repoLink, liveLink }: ProjectTypes) {
+export default function Project({ name, description, number, type, image, technologies, repoLink, liveLink }: ProjectTypes) {
   return (
-    <div className="flex flex-col gap-4 bg-gray-background rounded-lg p-4 ">
-      <div className=" relative aspect-video rounded-md bg-dark-gray-background">
-        <Image
-          src={image}
-          alt={name}
-          fill
-          className="object-cover object-top"
-        />
-      </div>
-      <div>
-        <h2 className="text-white font-medium text-[clamp(16px,1.2vw,25px)]">{name}</h2>
-        <p className="text-gray-text font-medium">{description}</p>
-      </div>
-      <div className="flex flex-wrap gap-2">
-        {
-          technologies.map((tech) => (
-            <div key={tech} className="bg-dark-gray-background text-white rounded-md px-4 py-1 text-[15px]">{tech}</div>
-          ))
-        }
-      </div>
-      <div className="flex gap-4 text-white flex-wrap">
-        <div className="flex items-center gap-2 bg-secondary-background rounded-md px-4 py-2 hover:bg-primary-blue hover:cursor-pointer transition-all">
-          <Image src={LinkIcon} alt={name} width={28} height={28} className="fill-white" />
-          <a href={liveLink}>Demostración</a>
+    <div className="flex flex-col md:flex-row p-3 md:p-6 bg-secondary-background max-w-[1200px] rounded-lg border-1 border-main-border gap-5">
+      <div className="flex flex-col gap-3 md:w-[40%]">
+        <h3 className="font-mono text-gray-text">{number} // {type}</h3>
+        <h1 className="text-main-text font-sans text-2xl">{name}</h1>
+        <p className="text-gray-text font-sans">{description}</p>
+        <div className="flex flex-wrap gap-2 mt-2">
+          {
+            technologies.map((t) => (
+              <div key={t} className="p-2 font-mono text-gray-text text-sm border-1 border-main-border rounded-lg">{t}</div>
+            ))
+          }
         </div>
-        <div className="flex items-center gap-2 bg-secondary-background rounded-md px-4 py-2 hover:bg-light-primary-red hover:cursor-pointer transition-all">
-          <Image src={GitHubIcon} alt={name} width={28} height={28} />
-          <a href={repoLink}>Repositorio</a>
+        <div className="flex gap-2 text-gray-text font-mono mt-auto">
+          <a href={liveLink} className="hover:text-main-text transition-all">Demo</a>
+          <a href={repoLink} className="hover:text-main-text transition-all">Repo</a>
         </div>
+      </div>
+
+      <div className="relative w-full md:flex-1 max-w-[500px] aspect-[16/10] border-1 border-main-border rounded-lg overflow-hidden bg-terciary-backgound ml-auto">
+        <Image src={image} fill alt="Project Image" className="object-cover object-top" />
       </div>
     </div>
   )
