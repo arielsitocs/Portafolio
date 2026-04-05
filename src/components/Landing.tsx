@@ -34,9 +34,9 @@ export default function Landing() {
       </div>
       <div className='hidden sm:grid lg:grid-cols-[30%_30%]'>
         <LandingCard number='01' name='Tecnologías' text='El core de mi trabajo. Arquitectura y stack MERN/PERN.' to='#technologies' />
-        <LandingCard number='02' name='Proyectos' text='Código en producción. Soluciones web reales y escalables.' to='#technologies' />
-        <LandingCard number='03' name='Sobre mí' text='Mi trayectoria, mentalidad y enfoque como Ingeniero.' to='#technologies' />
-        <LandingCard number='04' name='Contacto' text='Conversemos. Listo para nuevos desafíos técnicos.' to='#technologies' />
+        <LandingCard number='02' name='Proyectos' text='Código en producción. Soluciones web reales y escalables.' to='#projects' />
+        <LandingCard number='03' name='Sobre mí' text='Mi trayectoria, mentalidad y enfoque como Ingeniero.' to='#about' />
+        <LandingCard number='04' name='Contacto' text='Conversemos. Listo para nuevos desafíos técnicos.' to='#contact' />
       </div>
     </section>
   )
