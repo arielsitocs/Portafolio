@@ -29,8 +29,8 @@ export default function Landing() {
         </a>
       </div>
       <div className="flex flex-col md:flex-row font-sans gap-2 md:gap-5 text-[clamp(13px,1vw,16px)] mb-5 md:mb-10">
-        <button className="text-main-text bg-title rounded-lg px-10 py-3 hover:bg-red cursor-pointer transition-all">Ver Proyectos</button>
-        <button className="md:w-fit text-gray-text border-1 border-main-border rounded-lg px-10 py-3 hover:border-main-text hover:text-main-text cursor-pointer transition-all">Conversemos</button>
+        <a href='#projects' className="text-main-text bg-title rounded-lg px-10 py-3 hover:bg-red cursor-pointer transition-all">Ver Proyectos</a>
+        <a href='#contact' className="md:w-fit text-gray-text border-1 border-main-border rounded-lg px-10 py-3 hover:border-main-text hover:text-main-text cursor-pointer transition-all">Conversemos</a>
       </div>
       <div className='hidden sm:grid lg:grid-cols-[30%_30%]'>
         <LandingCard number='01' name='Tecnologías' text='El core de mi trabajo. Arquitectura y stack MERN/PERN.' to='#technologies' />
