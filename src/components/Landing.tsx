@@ -18,13 +18,13 @@ export default function Landing() {
           modernas, escalables y eficientes, desde la arquitectura hasta la interfaz.</p>
       </div>
       <div className='flex w-full items-center mb-5'>
-        <a href="" className='group hover:bg-secondary-background rounded-lg p-3 '>
+        <a href="https://github.com/arielsitocs" className='group hover:bg-secondary-background rounded-lg p-3 '>
           <FaGithub size={30} className='text-gray-text transition-colors group-hover:text-title' />
         </a>
-        <a href="" className='group hover:bg-secondary-background rounded-lg p-3 '>
+        <a href="https://www.linkedin.com/in/ariel-escobar/" className='group hover:bg-secondary-background rounded-lg p-3 '>
           <FaLinkedin size={30} className='text-gray-text transition-colors hover:text-title cursor-pointer' />
         </a>
-        <a href="" className='group hover:bg-secondary-background rounded-lg p-3 '>
+        <a href="#contact" className='group hover:bg-secondary-background rounded-lg p-3 '>
           <MdEmail size={30} className='text-gray-text transition-colors hover:text-title cursor-pointer' />
         </a>
       </div>
