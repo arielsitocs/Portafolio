@@ -10,8 +10,8 @@ import TellMe from "@/public/TellMe.png";
 export default function Projects() {
   const projects: ProjectTypes[] = [
     {
-      name: "TellMe",
-      description: "Red social enfocada a publicaciones de texto o imagenes. (WIP | /feed, /login, /register y /profile disponibles en frontend) ",
+      name: "TellMe (WIP)",
+      description: "Red social enfocada a publicaciones de texto o imagenes. (Funcionalidad Basica implementada) ",
       number: "01",
       type: "Red Social",
       image: TellMe,
