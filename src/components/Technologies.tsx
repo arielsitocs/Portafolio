@@ -17,7 +17,8 @@ import {
   SiReact,
   SiSpringboot,
   SiTailwindcss,
-  SiTypescript,
+  SiTypescript, SiCnet,
+  SiDotnet
 } from "react-icons/si";
 
 export default function Technologies() {
@@ -125,6 +126,12 @@ export default function Technologies() {
       icono: SiNestjs,
       iconColor: "#ea2845",
       color: "#5a1230"
+    },
+    {
+      name: ".NET",
+      icono: SiDotnet,
+      iconColor: "#512bd4",
+      color: "#1b133c"
     }
   ]
 

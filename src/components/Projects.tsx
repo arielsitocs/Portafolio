@@ -6,13 +6,31 @@ import ProjectTypes from "../types/Project";
 
 import Clocker from "@/public/Clocker.png";
 import TellMe from "@/public/TellMe.png";
+import Nexus from "@/public/Nexus.png";
 
 export default function Projects() {
   const projects: ProjectTypes[] = [
     {
-      name: "TellMe (WIP)",
-      description: "Red social enfocada a publicaciones de texto o imagenes. (Funcionalidad Basica implementada) ",
+      name: "Nexus B2B (Pronto)",
+      description: "Software B2B para la gestión de tus clientes, reportes y roles de tu empresa para aumentar la productividad y eficiencia.",
       number: "01",
+      type: "B2B",
+      image: Nexus,
+      technologies: [
+        "NextJS",
+        "TypeScript",
+        "SQL Server",
+        "ASP.NET",
+        "Tailwind",
+        "Entity Framework"
+      ],
+      repoLink: "",
+      liveLink: ""
+    },
+    {
+      name: "TellMe",
+      description: "Red social enfocada a publicaciones de texto o imagenes. (Aplicaciòn obsoleta)",
+      number: "02",
       type: "Red Social",
       image: TellMe,
       technologies: [
@@ -28,7 +46,7 @@ export default function Projects() {
     {
       name: "Clocker",
       description: "Aplicación de reloj basada en la de Android, adoptando sus funciones para uso web y móvil.",
-      number: "02",
+      number: "03",
       type: "Utilidad",
       image: Clocker,
       technologies: [
