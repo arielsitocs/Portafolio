@@ -11,7 +11,7 @@ import Nexus from "@/public/Nexus.png";
 export default function Projects() {
   const projects: ProjectTypes[] = [
     {
-      name: "Nexus B2B (Pronto)",
+      name: "Nexus B2B (WIP)",
       description: "Software B2B para la gestión de tus clientes, reportes y roles de tu empresa para aumentar la productividad y eficiencia. Correo demo: sergio@nexus.cl Password demo: sergio1234 (roles de editor)",
       number: "01",
       type: "B2B",
